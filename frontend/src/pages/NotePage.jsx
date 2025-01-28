@@ -123,6 +123,8 @@ const NotePage = () => {
             updateNote();
         } else if (id === "new" && note.body !== "") {
             createNote();
+        } else if (id === "new" && !note.body) {
+            navigate("/notes")
         }
     };
 
