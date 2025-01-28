@@ -34,7 +34,11 @@ SECRET_KEY = "django-insecure-95$86v5kv68(=p^mzo^vd$a2r=y)k_-jo8+uuoplk-6*&(pl5e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "https://notely-wtu8.onrender.com",
+    "locahost",
+    "http://127.0.0.1:8000",
+]
 
 
 # Application definition
