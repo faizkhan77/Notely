@@ -1,0 +1,182 @@
+:root {
+    --color-main: #f68657;
+    --color-text: #383a3f;
+    --color-dark: #1f2124;
+    --color-gray: #677;
+    --color-bg: #f3f6f9;
+    --color-light: #acb4bd;
+    --color-lighter: #f9f9f9;
+    --color-white: #fff;
+    --color-border: #e0e3e6;
+}
+
+.notely-home {
+    color: var(--color-light);
+    height: 88%;
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.notely-container {
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.hero-section .notely-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-section .notely-highlight {
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+.hero-section .notely-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-freelance {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-light);
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.hero-section .notely-author {
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+.hero-section .notely-get-started {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #1F2124;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-section .notely-get-started:hover {
+    background-color: var(--color-main);
+    color: black;
+    transform: scale(1.05);
+}
+
+.hero-section .notely-get-started:active {
+    transform: scale(0.98);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.features-section {
+    margin-top: 2rem;
+}
+
+.features-section .section-title {
+    font-size: 1.8rem;
+    color: var(--color-main);
+    margin-bottom: 1rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    text-align: center;
+    background-color: var(--color-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--color-main);
+    margin-bottom: 0.5rem;
+}
+
+.contact-section {
+    margin-top: 2rem;
+}
+
+.contact-section .section-title {
+    font-size: 1.8rem;
+    color: var(--color-main);
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-links a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--color-main);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.notely-footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+
+
+/* Custom Scrollbar */
+.notely-home::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.notely-home::-webkit-scrollbar-track {
+    background: transparent;
+    /* Transparent background for the track */
+}
+
+.notely-home::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.notely-home::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-light);
+    /* Hover effect */
+}

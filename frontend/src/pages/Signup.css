@@ -1,0 +1,138 @@
+/* Root Theme Variables */
+:root {
+    --color-main: #f68657;
+    --color-text: #383a3f;
+    --color-dark: #1f2124;
+    --color-gray: #677;
+    --color-bg: #f3f6f9;
+    --color-light: #acb4bd;
+    --color-lighter: #f9f9f9;
+    --color-white: #fff;
+    --color-border: #e0e3e6;
+}
+
+/* General Container */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 10px;
+    height: 100%;
+}
+
+.signup-card {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-heading {
+    color: var(--color-main);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form Styles */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    background-color: var(--color-lighter);
+    color: var(--color-text);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--color-main);
+    background-color: var(--color-white);
+    outline: none;
+}
+
+.submit-btn {
+    background-color: var(--color-main);
+    color: var(--color-white);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #e57a46;
+}
+
+.signup-footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.signup-footer a {
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .signup-card {
+        padding: 20px;
+    }
+
+    .signup-heading {
+        font-size: 20px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+}
+
+
+.go-back-icon {
+    font-size: 25px;
+    /* Size of the icon */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.go-back-icon:hover {
+    transform: translateX(-5px);
+    /* Moves icon to the left when hovered */
+    color: #e57a46;
+    /* Change color on hover */
+}
